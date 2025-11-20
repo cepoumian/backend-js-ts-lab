@@ -14,10 +14,9 @@ export const logUser = (user: User): void => {
 
   if (isStudent(user)) {
     extraInfo = `Ocupación: ${user.occupation}`;
-  } else if (isTeacher(user)) {
-    extraInfo = `Materia: ${user.subject}`;
   } else {
-    extraInfo = "Tipo desconocido";
+    // El único caso restante es Teacher gracias a la union
+    extraInfo = `Materia: ${user.subject}`;
   }
 
   console.log(`  - ${user.name}, ${user.age}, ${extraInfo}`);
