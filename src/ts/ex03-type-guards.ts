@@ -1,4 +1,5 @@
-import type { Student, Teacher, User } from "./ex02-user-union.ts";
+import type { Student } from "../types/ex01-students.types.js";
+import type { Teacher, User } from "../types/ex02-user-union.types.js";
 export type { Student, Teacher, User };
 
 export const isStudent = (user: User): user is Student => {
