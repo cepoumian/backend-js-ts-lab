@@ -1,5 +1,6 @@
 import { describe, it, expect } from "vitest";
-import { winnerByYear, data } from "../src/js/ex03-winnerByYear.js";
+import { winnerByYear } from "../src/js/ex03-winnerByYear.js";
+import { data } from "../src/data/ex03-winnerByYear.data.js";
 
 describe("winnerByYear", () => {
   it("devuelve los top 3 nombres por ranking para un año dado", () => {
@@ -13,7 +14,7 @@ describe("winnerByYear", () => {
   });
 
   it("no muta el array original", () => {
-    const copy = structuredClone(data); // o JSON.parse(JSON.stringify(data))
+    const copy = structuredClone(data);
     winnerByYear(data, 1998);
     expect(data).toEqual(copy);
   });
