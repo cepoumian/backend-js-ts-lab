@@ -1,8 +1,5 @@
-export interface Student {
-  name: string;
-  age: number;
-  occupation: string;
-}
+import type { Student } from "../types/ex01-students.types.js";
+export type { Student };
 
 export const students: Student[] = [
   {

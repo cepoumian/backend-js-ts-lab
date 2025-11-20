@@ -1,6 +1,7 @@
 import { describe, it, expect, expectTypeOf } from "vitest";
-import { users, logUser } from "../src/ts/ex02-user-union.ts";
-import type { User, Teacher, Student } from "../src/ts/ex02-user-union.ts";
+import { users } from "../src/data/ex02-user-union.data.ts";
+import { logUser } from "../src/ts/ex02-user-union.ts";
+import type { Student, Teacher, User } from "../src/ts/ex02-user-union.ts";
 
 describe("TS ex02 - unión User", () => {
   it("users debe ser un arreglo de User", () => {
