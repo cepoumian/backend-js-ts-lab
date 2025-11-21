@@ -11,6 +11,7 @@ El objetivo de este proyecto es resolver los ejercicios prácticos de lógica, e
 ```bash
 backend-js-ts-lab/
 ├── src/
+│   ├── data/        # Datos
 │   ├── js/        # Ejercicios en JavaScript
 │   │   ├── ex01-fromCSV.js
 │   │   ├── ex02-replaceAt.js
@@ -23,6 +24,7 @@ backend-js-ts-lab/
 │       ├── ex03-type-guards.ts
 │       ├── ex04-filterStudents.ts
 │       └── ex05-swap.ts
+├── types/          # Tipos
 ├── test/          # Tests con Vitest
 ├── dist/          # Archivos compilados (TS → JS)
 ├── Dockerfile
